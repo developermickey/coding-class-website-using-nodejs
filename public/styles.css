@@ -8,3 +8,6 @@ body {
     font-family: "Space Grotesk", sans-serif !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}

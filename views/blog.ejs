@@ -1,46 +1,105 @@
 <%- include('partials/header') %>
 
-<!-- Hero Section -->
-<div class="relative w-full h-screen bg-transparent flex items-center justify-center text-center text-black">
-   <!-- SVG Background Pattern -->
-   <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]"
-   aria-hidden="true">
-   <defs>
-     <pattern id="hero" width="80" height="80" x="50%" y="-1" patternUnits="userSpaceOnUse">
-       <path d="M.5 200V.5H200" fill="none"></path>
-     </pattern>
-   </defs>
-   <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
- </svg>
- <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]"
- aria-hidden="true">
- <defs>
-   <pattern id="hero" width="80" height="80" x="50%" y="-1" patternUnits="userSpaceOnUse">
-     <path d="M.5 200V.5H200" fill="none"></path>
-   </pattern>
- </defs>
- <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
-</svg>
-<svg class="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]"
-aria-hidden="true">
-<defs>
- <pattern id="hero" width="80" height="80" x="50%" y="-1" patternUnits="userSpaceOnUse">
-   <path d="M.5 200V.5H200" fill="none"></path>
- </pattern>
-</defs>
-<rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
-</svg>
+<div class="container mx-auto py-12 relative px-4 md:px-0">
+    <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]" aria-hidden="true">
+        <defs>
+            <pattern id="hero" width="80" height="80" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
+    </svg>
+    
+    <div class="flex flex-col md:flex-row mt-14">
+        <!-- Main Blog Content -->
+        <main class="flex-grow md:w-2/3">
+            <h2 class="text-2xl font-semibold mb-6">Latest Blogs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Blog Post Item -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400" alt="Blog Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <a href="#" class="text-gray-800 hover:text-blue-600">Blog Title 1</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400" alt="Blog Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <a href="#" class="text-gray-800 hover:text-blue-600">Blog Title 2</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400" alt="Blog Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <a href="#" class="text-gray-800 hover:text-blue-600">Blog Title 3</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400" alt="Blog Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <a href="#" class="text-gray-800 hover:text-blue-600">Blog Title 4</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                        <a href="#" class="text-blue-600">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </main>
 
-  
-  <!-- Hero Content -->
-  <div class="max-w-2xl w-3xl px-4">
-    <h1 class="text-4xl bg-gradient-to-br from-white to-zinc-700 bg-clip-text text-10xl/[1.07] font-base tracking-tight text-transparent md:text-7xl/[1.07] text-center mb-7">Turning Passion Into Programming</h1>
-    <p class="text-lg md:text-2xl font-light max-w-2xl mx-auto text-zinc-400">
-        We empower future innovators with hands-on coding education that goes beyond the classroom, fostering creativity and real-world skills.
-    </p>
-    <button class="group relative rounded-full p-px text-lg text-zinc-400 duration-300 hover:text-zinc-100 hover:shadow-glow mt-10" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rjljaqla:" data-state="closed"><span class="absolute inset-0 overflow-hidden rounded-full"><span class="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span></span><div class="relative px-10 z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">Our Courses</div><span class="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-cyan-400/0 via-cyan-400/90 to-cyan-400/0 transition-opacity duration-500 group-hover:opacity-40"></span></button>
-  </div>
+        <!-- Sidebar -->
+        <aside class="hidden md:block w-1/3 pl-6 pt-16">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-black">Search</h3>
+                <form>
+                    <input type="text" placeholder="Search..." class="w-full px-4 py-2 border text-black border-gray-300 rounded-lg mb-4">
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg">Search</button>
+                </form>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-black">Recent Blogs</h3>
+                <ul>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Recent Blog Title 1</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Recent Blog Title 2</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Recent Blog Title 3</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-4 text-black">All Categories</h3>
+                <ul>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Category 1</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Category 2</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-blue-600 hover:underline">Category 3</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 </div>
-
 
 <%- include('partials/footer') %>
